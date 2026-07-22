@@ -69,5 +69,5 @@ Le site est déjà optimisé côté contenu : titres, textes et données structu
 ## 🔧 6. Ajuster le contenu
 
 - **Prix** : cherche `625 $` / `795 $`. Pour cacher les prix, remplace la section `id="tarifs"` par « Sur soumission ».
-- **Multi-surface** : c'est un service secondaire (3e carte des Services). Retire la carte si tu ne l'offres pas encore.
+- **Multi-surface** : retiré pour l'instant afin de se concentrer sur le réémaillage. Quand tu voudras l'offrir, redemande-moi de réactiver la carte.
 - **Villes** : ajoute/enlève des municipalités dans le bandeau `id="zones"` et dans le menu déroulant du formulaire.
