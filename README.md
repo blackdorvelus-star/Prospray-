@@ -1,4 +1,4 @@
-# Site web — Prospray
+# Site web — NéoSpray
 
 Site vitrine + outil de soumission pour un service de **réémaillage de baignoires** dans le **KRTB** (Rivière-du-Loup, Montmagny, La Pocatière, Saint-Alexandre, Kamouraska) et le corridor de l'autoroute 20.
 
@@ -27,7 +27,7 @@ Les coordonnées sont **déjà remplies**. Voici les valeurs en place, si tu doi
 
 | Cherche… (valeur actuelle) | C'est… |
 |---|---|
-| `Prospray` | Le nom de l'entreprise |
+| `NéoSpray` | Le nom de l'entreprise |
 | `(581) 922-0377` | Le numéro affiché sur le site |
 | `+15819220377` | Le numéro du bouton « Appeler » (sans espaces, avec le `1` devant) |
 | `contacprospray@gmail.com` | Le courriel qui reçoit les demandes |
