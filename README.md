@@ -23,13 +23,15 @@ Double-clique sur **`index.html`** : il s'ouvre dans ton navigateur.
 
 ## ✏️ 2. Personnaliser (Rechercher/Remplacer dans `index.html` et `merci.html`)
 
-| Cherche… | Remplace par… |
+Les coordonnées sont **déjà remplies**. Voici les valeurs en place, si tu dois les changer un jour :
+
+| Cherche… (valeur actuelle) | C'est… |
 |---|---|
-| `Prospray` | Le nom de ton entreprise (si différent) |
-| `(418) 000-0000` | Ton vrai numéro |
-| `+14180000000` | Ton numéro sans espaces, avec le `1` devant (ex. `+15815551234`) — fait fonctionner le bouton « Appeler » |
-| `info@prospray.ca` | Ton courriel |
-| `prospray.ca` | Ton nom de domaine (si tu en prends un) |
+| `Prospray` | Le nom de l'entreprise |
+| `(581) 922-0377` | Le numéro affiché sur le site |
+| `+15819220377` | Le numéro du bouton « Appeler » (sans espaces, avec le `1` devant) |
+| `contacprospray@gmail.com` | Le courriel qui reçoit les demandes |
+| `prospray.ca` | Le nom de domaine (dans le lien canonique et les données SEO) — à ajuster quand ton site sera en ligne |
 
 ---
 
