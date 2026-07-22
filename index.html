@@ -125,6 +125,9 @@
   .ph .note{font-weight:500;font-size:.82rem;opacity:.85;font-family:'Inter'}
   .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%)}
   .ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;color:var(--brand)}
+  .ba-label{position:absolute;top:12px;font-family:'Poppins';font-weight:700;font-size:.72rem;letter-spacing:.1em;color:#fff;background:rgba(18,38,46,.62);padding:5px 12px;border-radius:999px;z-index:3;pointer-events:none}
+  .ba-after .ba-label{right:12px}
+  .ba-before .ba-label{left:12px}
 
   /* Zones desservies */
   .zones{background:var(--brand);color:#fff;padding:34px 0}
@@ -296,11 +299,11 @@
     </div>
     <div>
       <div class="ba" id="baSlider">
-        <div class="ba-slide ba-after">
-          <div class="ph"><span class="tag">APRÈS</span><span class="note">Déposez votre photo « après »<br>(fini blanc éclatant)</span></div>
+        <div class="ba-slide ba-after" style="background:url('img/apres-1.jpg') center/cover">
+          <span class="ba-label">APRÈS</span>
         </div>
-        <div class="ba-slide ba-before" id="baBefore">
-          <div class="ph"><span class="tag">AVANT</span><span class="note">Déposez votre photo « avant »</span></div>
+        <div class="ba-slide ba-before" id="baBefore" style="background:url('img/avant-1.jpg') center/cover">
+          <span class="ba-label">AVANT</span>
         </div>
         <div class="ba-handle" id="baHandle">
           <div class="ba-knob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7 4 12l5 5M15 7l5 5-5 5"/></svg></div>
@@ -471,9 +474,9 @@
       <p class="lead">Ajoutez ici vos meilleures photos de transformations. Rien ne convainc mieux qu'un vrai « avant / après ».</p>
     </div>
     <div class="grid-3" style="margin-top:48px">
-      <div class="ba" style="cursor:default;aspect-ratio:1/1"><div class="ba-slide ba-after" style="clip-path:none"><div class="ph"><span class="tag">PROJET 1</span><span class="note">Votre photo ici</span></div></div></div>
-      <div class="ba" style="cursor:default;aspect-ratio:1/1"><div class="ba-slide ba-after" style="clip-path:none;background:linear-gradient(135deg,#e6f0f1,#9fd0d3)"><div class="ph"><span class="tag">PROJET 2</span><span class="note">Votre photo ici</span></div></div></div>
-      <div class="ba" style="cursor:default;aspect-ratio:1/1"><div class="ba-slide ba-after" style="clip-path:none;background:linear-gradient(135deg,#eef6ee,#bfe0c4)"><div class="ph"><span class="tag">PROJET 3</span><span class="note">Votre photo ici</span></div></div></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-1.jpg') center/cover"></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-2.jpg') center/cover"></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-3.jpg') center/cover"></div>
     </div>
   </div>
 </section>
