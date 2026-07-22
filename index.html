@@ -21,7 +21,7 @@
 <title>Réémaillage de baignoire à Rivière-du-Loup & KRTB | Comme neuve, sans démolition — Prospray</title>
 <meta name="description" content="Réémaillage professionnel de baignoires à Rivière-du-Loup, Montmagny, La Pocatière et partout dans le KRTB. Une baignoire comme neuve en 24-48h, sans démolition, à partir de 625 $ tout inclus. Soumission gratuite sur photos.">
 <meta name="theme-color" content="#0e7c86">
-<link rel="canonical" href="https://prospray.ca/">
+<link rel="canonical" href="https://prospray-rdl.netlify.app/">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%230e7c86' d='M16 2C16 2 6 14 6 21a10 10 0 0 0 20 0C26 14 16 2 16 2z'/%3E%3Cpath fill='%23bfeaec' d='M13 20a3 3 0 0 0 3 3'/%3E%3C/svg%3E">
 
@@ -29,8 +29,8 @@
 <meta property="og:description" content="Votre baignoire comme neuve en 24-48h, sans démolition. À partir de 625 $ tout inclus. Soumission gratuite sur photos.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CA">
-<meta property="og:url" content="https://prospray.ca/">
-<meta property="og:image" content="https://prospray.ca/img/apres-1.jpg">
+<meta property="og:url" content="https://prospray-rdl.netlify.app/">
+<meta property="og:image" content="https://prospray-rdl.netlify.app/img/apres-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,7 @@
   "description": "Réémaillage de baignoires dans le KRTB et le Bas-Saint-Laurent.",
   "telephone": "+1-581-922-0377",
   "email": "contacprospray@gmail.com",
-  "url": "https://prospray.ca/",
+  "url": "https://prospray-rdl.netlify.app/",
   "priceRange": "$$",
   "areaServed": [
     { "@type": "City", "name": "Rivière-du-Loup" },
@@ -131,6 +131,9 @@
   .ba-label{position:absolute;top:12px;font-family:'Poppins';font-weight:700;font-size:.72rem;letter-spacing:.1em;color:#fff;background:rgba(18,38,46,.62);padding:5px 12px;border-radius:999px;z-index:3;pointer-events:none}
   .ba-after .ba-label{right:12px}
   .ba-before .ba-label{left:12px}
+  /* Le curseur avant/apres capte le glissement horizontal sans faire defiler la page */
+  #baSlider{touch-action:none}
+  #baSlider *{pointer-events:none}
 
   /* Zones desservies */
   .zones{background:var(--brand);color:#fff;padding:34px 0}
@@ -681,15 +684,22 @@
       before.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
       handle.style.left = pct + '%';
     }
-    const start = () => dragging = true;
-    const stop = () => dragging = false;
-    const move = e => { if (!dragging) return; const x = e.touches ? e.touches[0].clientX : e.clientX; setPos(x); };
-    slider.addEventListener('mousedown', e => { start(); setPos(e.clientX); });
-    slider.addEventListener('touchstart', e => { start(); setPos(e.touches[0].clientX); }, {passive:true});
-    window.addEventListener('mousemove', move);
-    window.addEventListener('touchmove', move, {passive:true});
-    window.addEventListener('mouseup', stop);
-    window.addEventListener('touchend', stop);
+    // Pointer events : souris + tactile unifies, avec capture pour un glissement fiable.
+    // Combine a touch-action:none (CSS), le glissement horizontal ne fait plus defiler la page.
+    slider.addEventListener('pointerdown', e => {
+      dragging = true;
+      try { slider.setPointerCapture(e.pointerId); } catch (_) {}
+      setPos(e.clientX);
+    });
+    slider.addEventListener('pointermove', e => {
+      if (dragging) setPos(e.clientX);
+    });
+    const endDrag = e => {
+      dragging = false;
+      try { slider.releasePointerCapture(e.pointerId); } catch (_) {}
+    };
+    slider.addEventListener('pointerup', endDrag);
+    slider.addEventListener('pointercancel', endDrag);
   }
 </script>
 </body>
