@@ -13,7 +13,7 @@ confidentialite.html  ← politique de confidentialité (Loi 25)
 README.md             ← ce guide
 ```
 
-> ⚖️ **Politique de confidentialité (Loi 25)** : la page `confidentialite.html` couvre la collecte de renseignements par le formulaire. **À faire :** ajoute ton nom comme « personne responsable » (cherche « Le propriétaire de NéoSpray » dans le fichier). Ce n'est pas un avis juridique — fais-le valider au besoin. Le site n'utilise aucun témoin de suivi, donc aucune bannière de cookies n'est nécessaire.
+> ⚖️ **Politique de confidentialité (Loi 25)** : la page `confidentialite.html` couvre la collecte de renseignements par le formulaire. Personne responsable : **Émile Desrosiers**. Ce n'est pas un avis juridique — fais-le valider au besoin. Le site n'utilise aucun témoin de suivi, donc aucune bannière de cookies n'est nécessaire.
 
 ---
 
