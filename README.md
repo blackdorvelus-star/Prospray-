@@ -1,6 +1,6 @@
 # Site web — NéoSpray
 
-Site vitrine + outil de soumission pour un service de **réémaillage de baignoires**, de **Montmagny à Rivière-du-Loup** (et tous les environs de Rivière-du-Loup), le long du corridor de l'autoroute 20. Plus loin que Rivière-du-Loup : sur demande, pour les projets de plus grande envergure.
+Site vitrine + outil de soumission pour un service de **réémaillage de baignoires**, de **Bellechasse à Rivière-du-Loup** (et tous les environs de Rivière-du-Loup), le long du corridor de l'autoroute 20. Plus loin que Rivière-du-Loup : sur demande, pour les projets de plus grande envergure.
 
 Tout tient dans **un seul fichier** (`index.html`) — aucune installation, aucun logiciel à apprendre.
 
