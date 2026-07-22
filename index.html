@@ -42,12 +42,23 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://prospray-rdl.netlify.app/#business",
   "name": "NéoSpray",
   "description": "Réémaillage de baignoires de Bellechasse à Rivière-du-Loup et ses environs (Côte-du-Sud et Bas-Saint-Laurent).",
+  "slogan": "Une baignoire comme neuve, sans démolition.",
   "telephone": "+1-581-922-0377",
   "email": "infoneospray@gmail.com",
   "url": "https://prospray-rdl.netlify.app/",
+  "image": "https://prospray-rdl.netlify.app/img/apres-1.jpg",
   "priceRange": "$$",
+  "currenciesAccepted": "CAD",
+  "founder": { "@type": "Person", "name": "Émile Desrosiers" },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
   "areaServed": [
     { "@type": "City", "name": "Rivière-du-Loup" },
     { "@type": "City", "name": "Montmagny" },
@@ -72,12 +83,30 @@
     { "@type": "AdministrativeArea", "name": "Côte-du-Sud" },
     { "@type": "AdministrativeArea", "name": "Bas-Saint-Laurent" }
   ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": { "@type": "Service", "name": "Réémaillage de baignoire" },
-    "priceCurrency": "CAD",
-    "price": "625"
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services de réémaillage",
+    "itemListElement": [
+      { "@type": "Offer", "priceCurrency": "CAD", "price": "625", "itemOffered": { "@type": "Service", "name": "Réémaillage de baignoire d'origine" } },
+      { "@type": "Offer", "priceCurrency": "CAD", "price": "795", "itemOffered": { "@type": "Service", "name": "Réémaillage de baignoire déjà réémaillée (décapage inclus)" } }
+    ]
   }
+}
+</script>
+
+<!-- Données structurées FAQ (résultats enrichis Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Pourquoi devez-vous voir des photos avant de donner un prix ?", "acceptedAnswer": { "@type": "Answer", "text": "Les photos nous permettent de voir l'état réel de votre baignoire — surtout si elle a déjà été réémaillée. Un ancien revêtement doit être décapé jusqu'à la porcelaine, ce qui change le prix. Avec vos photos, on vous donne un montant exact, sans mauvaise surprise." } },
+    { "@type": "Question", "name": "Desservez-vous ma municipalité ?", "acceptedAnswer": { "@type": "Answer", "text": "On dessert tout le corridor de l'autoroute 20, de Bellechasse jusqu'à Rivière-du-Loup, ainsi que tous les environs de Rivière-du-Loup. Le déplacement est déjà inclus dans le prix. Plus loin que Rivière-du-Loup, on se déplace surtout pour les projets de plus grande envergure." } },
+    { "@type": "Question", "name": "Combien de temps avant de pouvoir utiliser la baignoire ?", "acceptedAnswer": { "@type": "Answer", "text": "La finition est appliquée le jour 1, puis scellée le lendemain (jour 2). Votre baignoire est prête à l'usage après le temps de cure recommandé." } },
+    { "@type": "Question", "name": "Qu'est-ce qui rend votre finition plus durable ?", "acceptedAnswer": { "@type": "Answer", "text": "On utilise un agent de liaison moléculaire au silane pour une adhérence supérieure, sans gravure à l'acide. Sur les bains déjà réémaillés, on décape entièrement l'ancien revêtement plutôt que de le sabler, ce qui évite le décollement prématuré." } },
+    { "@type": "Question", "name": "Offrez-vous des tarifs pour plusieurs unités (immeuble, motel) ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Pour plusieurs baignoires (immeubles à revenus, motels), on offre des tarifs de volume et on planifie les interventions pour minimiser le temps d'inoccupation." } },
+    { "@type": "Question", "name": "La soumission est-elle gratuite ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, à 100 % et sans engagement. Envoyez vos photos et on vous retourne un prix clair, tout inclus." } }
+  ]
 }
 </script>
 
@@ -321,10 +350,12 @@
     </div>
     <div>
       <div class="ba" id="baSlider">
-        <div class="ba-slide ba-after" style="background:url('img/apres-1.jpg') center/cover">
+        <div class="ba-slide ba-after">
+          <img src="img/apres-1.jpg" alt="Baignoire réémaillée, fini blanc éclatant comme neuf — Rivière-du-Loup et région" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
           <span class="ba-label">APRÈS</span>
         </div>
-        <div class="ba-slide ba-before" id="baBefore" style="background:url('img/avant-1.jpg') center/cover">
+        <div class="ba-slide ba-before" id="baBefore">
+          <img src="img/avant-1.jpg" alt="Vieille baignoire usée et jaunie avant le réémaillage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
           <span class="ba-label">AVANT</span>
         </div>
         <div class="ba-handle" id="baHandle">
@@ -500,12 +531,12 @@
     <div class="center">
       <span class="eyebrow">Avant / Après</span>
       <h2 class="title">Nos réalisations dans la région</h2>
-      <p class="lead">Ajoutez ici vos meilleures photos de transformations. Rien ne convainc mieux qu'un vrai « avant / après ».</p>
+      <p class="lead">Des baignoires comme neuves, réalisées directement chez nos clients de la région. Rien ne convainc mieux qu'un vrai avant/après.</p>
     </div>
     <div class="grid-3" style="margin-top:48px">
-      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-1.jpg') center/cover"></div>
-      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-2.jpg') center/cover"></div>
-      <div class="ba" style="cursor:default;aspect-ratio:1/1;background:url('img/realisation-3.jpg') center/cover"></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1"><img src="img/realisation-1.jpg" alt="Réémaillage de baignoire terminé, fini blanc éclatant — Rivière-du-Loup" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1"><img src="img/realisation-2.jpg" alt="Baignoire réémaillée comme neuve — La Pocatière, KRTB" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="ba" style="cursor:default;aspect-ratio:1/1"><img src="img/realisation-3.jpg" alt="Réémaillage de baignoire, finition professionnelle — Montmagny, Côte-du-Sud" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
     </div>
   </div>
 </section>
