@@ -17,7 +17,7 @@ README.md    ← ce guide
 ## 👀 1. Voir le site
 
 Double-clique sur **`index.html`** : il s'ouvre dans ton navigateur.
-> Note : le formulaire n'envoie rien tant que le site n'est pas hébergé sur Netlify (voir §4).
+> Note : le formulaire envoie les demandes par courriel une fois le site en ligne et FormSubmit activé (voir §4).
 
 ---
 
@@ -41,20 +41,20 @@ Ce sont elles qui vendent. Dépose tes images dans ce dossier, puis dans le curs
 
 ---
 
-## 📬 4. Le formulaire avec téléversement de photos → héberge sur **Netlify** (gratuit)
+## 📬 4. Recevoir les demandes par courriel (gratuit, via FormSubmit)
 
-Le formulaire de soumission **exige des photos** (essentiel pour détecter un ancien émaillage et donner le bon prix). Un site statique seul ne peut pas recevoir de fichiers — mais **Netlify Forms** le fait **gratuitement** (jusqu'à 100 soumissions/mois), photos incluses. Le code est déjà configuré pour ça.
+Le formulaire envoie les demandes **directement dans ta boîte Gmail** grâce à **FormSubmit.co** — gratuit, illimité, **aucun frais mensuel**, aucun compte à créer. Les photos, elles, arrivent **par texto** au 581 922-0377 (donc aucun stockage à payer).
 
-**Mettre en ligne :**
-1. Va sur **[app.netlify.com/drop](https://app.netlify.com/drop)** (crée un compte gratuit).
-2. **Glisse ce dossier complet** dans la fenêtre.
-3. Ton site est en ligne en ~30 secondes, à une adresse gratuite `xxxxx.netlify.app`.
+**Activation (à faire UNE seule fois) :**
+1. Mets le site en ligne (voir l'hébergement ci-dessous).
+2. Remplis toi-même le formulaire une première fois et envoie-le.
+3. Tu recevras un courriel de **FormSubmit** avec un bouton **« Activate Form »** → clique-le.
+4. Voilà : à partir de là, chaque demande arrive à `infoneospray@gmail.com` (l'adresse courriel du client devient l'adresse de réponse, tu peux répondre directement).
 
-**Recevoir les demandes par courriel :**
-- Dans Netlify : **Forms → Notifications → Add notification → Email**, et mets ton courriel.
-- Chaque soumission (avec les photos) apparaît aussi dans **Forms** sur ton tableau de bord Netlify.
+> Pour changer l'adresse de réception : cherche `formsubmit.co/infoneospray@gmail.com` dans `index.html`.
+> Si du pourriel apparaît un jour : remets `_captcha` à `true` dans le formulaire.
 
-> ⚠️ GitHub Pages n'accepte PAS les envois de fichiers. Pour la photo obligatoire, **utilise Netlify** (ou un service équivalent). Plus tard tu pourras brancher un vrai domaine (ex. `prospray.ca`, ~15-20 $/an).
+**Hébergement (gratuit) :** le site est relié à GitHub et publié sur **Netlify** ; chaque modification poussée se met en ligne automatiquement. (Pour un simple test, tu peux aussi glisser le dossier sur [app.netlify.com/drop](https://app.netlify.com/drop).)
 
 ---
 
