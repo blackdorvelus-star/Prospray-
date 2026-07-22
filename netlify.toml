@@ -1,0 +1,3 @@
+# Site statique Prospray : publie la racine du depot, aucun build.
+[build]
+  publish = "."
