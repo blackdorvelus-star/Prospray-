@@ -58,6 +58,16 @@
     { "@type": "City", "name": "La Pocatière" },
     { "@type": "City", "name": "Kamouraska" },
     { "@type": "City", "name": "Saint-Alexandre-de-Kamouraska" },
+    { "@type": "City", "name": "Saint-Pascal" },
+    { "@type": "City", "name": "Saint-Pacôme" },
+    { "@type": "City", "name": "Cap-Saint-Ignace" },
+    { "@type": "City", "name": "Saint-Vallier" },
+    { "@type": "City", "name": "Berthier-sur-Mer" },
+    { "@type": "City", "name": "Saint-Roch-des-Aulnaies" },
+    { "@type": "City", "name": "Notre-Dame-du-Portage" },
+    { "@type": "City", "name": "Saint-Antonin" },
+    { "@type": "City", "name": "Cacouna" },
+    { "@type": "City", "name": "L'Isle-Verte" },
     { "@type": "AdministrativeArea", "name": "Bellechasse" },
     { "@type": "AdministrativeArea", "name": "Côte-du-Sud" },
     { "@type": "AdministrativeArea", "name": "Bas-Saint-Laurent" }
@@ -337,8 +347,9 @@
     <span class="ztown">L'Islet</span>
     <span class="ztown">La Pocatière</span>
     <span class="ztown">Kamouraska</span>
+    <span class="ztown">Saint-Pascal</span>
     <span class="ztown">Saint-Alexandre</span>
-    <span class="zlabel">et tous les environs de Rivière-du-Loup</span>
+    <span class="zlabel">et toutes les municipalités entre les deux</span>
   </div>
 </div>
 
@@ -526,7 +537,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q">Desservez-vous ma municipalité ? <span class="chev">▾</span></button>
-        <div class="faq-a"><p>On dessert tout le corridor de l'autoroute 20, de la région de Bellechasse (Beaumont, Saint-Michel) — tout ce qui est à l'est de Lévis — jusqu'à Rivière-du-Loup, en passant par Montmagny, L'Islet, La Pocatière et Kamouraska, ainsi que tous les environs de Rivière-du-Loup. Le déplacement est déjà inclus dans le prix. Plus loin que Rivière-du-Loup, on se déplace surtout pour les projets de plus grande envergure (plusieurs baignoires, immeubles, motels). En cas de doute, contactez-nous.</p></div>
+        <div class="faq-a"><p>On dessert tout le corridor de l'autoroute 20, de la région de Bellechasse (Beaumont, Saint-Michel) — tout ce qui est à l'est de Lévis — jusqu'à Rivière-du-Loup, en passant par toutes les municipalités du corridor (Montmagny, L'Islet, La Pocatière, Kamouraska, Saint-Pascal, Saint-Alexandre…), ainsi que tous les environs de Rivière-du-Loup. Le déplacement est déjà inclus dans le prix. Plus loin que Rivière-du-Loup, on se déplace surtout pour les projets de plus grande envergure (plusieurs baignoires, immeubles, motels). En cas de doute, contactez-nous.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Combien de temps avant de pouvoir utiliser la baignoire ? <span class="chev">▾</span></button>
@@ -600,21 +611,8 @@
         <input type="email" id="courriel" name="email" placeholder="vous@exemple.ca">
       </div>
       <div class="field">
-        <label for="ville">Municipalité <span class="req">*</span></label>
-        <select id="ville" name="municipalite" required>
-          <option value="">Choisir…</option>
-          <option>Rivière-du-Loup</option>
-          <option>Environs de Rivière-du-Loup</option>
-          <option>Beaumont</option>
-          <option>Saint-Michel-de-Bellechasse</option>
-          <option>Montmagny</option>
-          <option>L'Islet</option>
-          <option>Saint-Jean-Port-Joli</option>
-          <option>La Pocatière</option>
-          <option>Kamouraska</option>
-          <option>Saint-Alexandre-de-Kamouraska</option>
-          <option>Autre / plus loin (préciser dans le message)</option>
-        </select>
+        <label for="ville">Votre municipalité <span class="req">*</span></label>
+        <input type="text" id="ville" name="municipalite" placeholder="Ex. : Saint-Pascal, Montmagny, Rivière-du-Loup…" required>
       </div>
       <div class="field">
         <label for="etat">Votre baignoire a-t-elle déjà été réémaillée ?</label>

@@ -72,4 +72,4 @@ Le site est déjà optimisé côté contenu : titres, textes et données structu
 
 - **Prix** : cherche `625 $` / `795 $`. Pour cacher les prix, remplace la section `id="tarifs"` par « Sur soumission ».
 - **Multi-surface** : retiré pour l'instant afin de se concentrer sur le réémaillage. Quand tu voudras l'offrir, redemande-moi de réactiver la carte.
-- **Villes** : ajoute/enlève des municipalités dans le bandeau `id="zones"` et dans le menu déroulant du formulaire.
+- **Villes** : ajoute/enlève des municipalités dans le bandeau `id="zones"`. Le champ « municipalité » du formulaire est un **texte libre** — aucune liste à gérer, aucune ville ne peut manquer.
