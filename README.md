@@ -34,7 +34,7 @@ Les coordonnées sont **déjà remplies**. Voici les valeurs en place, si tu doi
 | `(581) 922-0377` | Le numéro affiché sur le site |
 | `+15819220377` | Le numéro du bouton « Appeler » (sans espaces, avec le `1` devant) |
 | `infoneospray@gmail.com` | Le courriel qui reçoit les demandes |
-| `prospray-rdl.netlify.app` | L'adresse actuelle du site (lien canonique + données SEO) — à remplacer si tu prends un vrai domaine |
+| `neospray.ca` | L'adresse actuelle du site (lien canonique + données SEO) — à remplacer si tu prends un vrai domaine |
 
 ---
 
