@@ -35,6 +35,17 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-17952713671/cUFrCMOiyNUcEMfXwvBC'});
 </script>
+<!-- Compteur de visites simple (aucun cookie, aucune donnee personnelle) -->
+<script>
+  fetch('https://zpfhpwtodvkmjiecjqqs.supabase.co/rest/v1/visites', {
+    method: 'POST',
+    headers: {
+      'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwZmhwd3RvZHZrbWppZWNqcXFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3NzIzMTcsImV4cCI6MjEwMjM0ODMxN30.9P4KWvnAEoexL2asZ6xgZCezDRWhzJlMyldXr0wBWts',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ page: location.pathname, referrer: document.referrer || null })
+  }).catch(function(){});
+</script>
 </head>
 <body>
   <div class="box">
